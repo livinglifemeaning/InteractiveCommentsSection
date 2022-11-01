@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+$f-primary: "Rubik", sans-serif;
+$c-blue-primary: 238 40% 52%;
+$c-red-primary: 358 79% 66%;
+$c-blue-pale: 239 57% 85%;
+$c-red-pale: 357 100% 86%;
+$c-gray-800: 212 24% 26%;
+$c-gray-700: 211 10% 45%;
+$c-blue-100: 223 19% 93%;
+$c-white: 0 0% 100%;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$border-radius: .5em; 
+@mixin actions-text ($color : $c-blue-primary, $hover-color : $c-blue-pale){
+    color: hsl($color); 
+    font-weight: $fw-700; 
+    cursor: pointer; 
+    &:hover{
+        color: hsl($hover-color);
+    }
+}
+
+@mixin body-text{
+    color: hsl($c-gray-700); 
+    font-weight: $fw-400; 
+}
+
+@mixin handles-text{
+    font-weight: $fw-500; 
+    color: hsl($c-gray-800); 
+}
+
+@mixin tag-text{
+ font-weight: $fw-500; 
+ color: hsl($c-blue-primary); 
+}
+@mixin button($bg-color : $c-blue-primary, $bg-hover-color : $c-blue-pale){
+    background-color: hsl($bg-color); 
+    text-transform: uppercase; 
+    color: hsl($c-white); 
+    font-weight: $fw-400; 
+    cursor: pointer; 
+    border-radius: $border-radius; 
+    border: 0; 
+    padding: .5em 1.5em; 
+
+    &:hover{
+        background-color: hsl($bg-hover-color);
+    }
+
+    &:active{
+        scale: .98; 
+    }
+}
+
+@mixin card($max-width : 60rem){
+    background-color: hsl($c-white);
+    padding: 1rem 1.5rem; 
+    max-width: $max-width; 
+    border-radius: $border-radius; 
+}
+
+@mixin flex-row($gap : 1rem){
+    display: flex; 
+    flex-direction: row; 
+    gap: $gap; 
+    align-items: center; 
+}
+
+@mixin flex-column{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}

@@ -1,0 +1,17 @@
+@import "./reset";
+@import "./variables"; 
+
+body{
+    font-family: $f-primary; 
+    background-color: hsl($c-blue-100); 
+}
+
+.icon{
+    @include actions-text; 
+    @include flex-row(.5em); 
+    width: fit-content;
+
+    &.delete{
+        @include actions-text($c-red-primary, $c-red-pale);
+    }
+}

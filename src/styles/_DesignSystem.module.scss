@@ -1,0 +1,64 @@
+@import "./variables"; 
+
+.designSystem{
+    padding: 3rem;
+    background-color: rgb(232, 232, 232); 
+   
+    > *{
+        margin-bottom: 1em; 
+    }
+}
+
+.commentInfo{
+    @include flex-row; 
+}
+.profilePic{
+    width: 35px;  
+} 
+
+.commentor{
+    @include handles-text; 
+}
+
+.timestamp, .comment{
+    @include body-text;  
+}
+
+.tag, .amountOfLikes{
+    @include tag-text;  
+}
+
+.card{
+    @include card; 
+}
+
+
+.delete{
+    @include actions-text($c-red-primary, $c-red-pale); 
+}
+
+.button{
+    @include button; 
+}
+
+.likesBar{ 
+    background-color: hsl($c-blue-100); 
+    width: fit-content;  
+    padding: .2rem .6rem; 
+    font-size: 1.1rem; 
+    @include flex-column;
+    gap: .5rem; 
+    border-radius: $border-radius;  
+}
+
+.like, .dislike{
+    display: grid; 
+    place-items: center; 
+    width: 20px; 
+    cursor: pointer; 
+
+    &:active{
+        scale: .9; 
+    }
+}
+
