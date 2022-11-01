@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/InteractiveCommentsSection/static/css/main.766b85a1.css",
+    "main.js": "/InteractiveCommentsSection/static/js/main.3e7ca862.js",
+    "static/media/image-amyrobson.webp": "/InteractiveCommentsSection/static/media/image-amyrobson.974bbf3c9ffb709f30a0.webp",
+    "index.html": "/InteractiveCommentsSection/index.html",
+    "main.766b85a1.css.map": "/InteractiveCommentsSection/static/css/main.766b85a1.css.map",
+    "main.3e7ca862.js.map": "/InteractiveCommentsSection/static/js/main.3e7ca862.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.766b85a1.css",
+    "static/js/main.3e7ca862.js"
+  ]
+}
