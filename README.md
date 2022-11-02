@@ -42,3 +42,4 @@ Estimated Time: 12hours | Actual Time: 14hrs
 - Want to come back and clean this project up, using redux or useContext and useReducer, seperating logic into more files and make it cleaner to navigate
 - https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value | learned how to sort array of objects by an object property
 - sorted comments by time 
+- uses localStorage to detect if user has liked or disliked
