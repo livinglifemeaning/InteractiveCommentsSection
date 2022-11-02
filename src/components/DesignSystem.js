@@ -4,7 +4,7 @@ import EditButton from "./Icons/EditButton";
 import DeleteButton from "./Icons/DeleteButton";
 import PlusIcon from "./Icons/PlusIcon";
 import MinusIcon from "./Icons/MinusIcon";
-import classes from "../styles/_DesignSystem.module.scss";
+import classes from "../styles/DesignSystem.module.scss";
 
 const DesignSystem = () => {
   return (

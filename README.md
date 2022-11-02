@@ -16,21 +16,29 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/livinglifemeaning/InteractiveCommentsSection/tree/master
+- Live Site URL: https://livinglifemeaning.github.io/InteractiveCommentsSection/
 
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- SASS
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Firebase as backend database
+
 
 
 ### Notes
-Estimated Time: 8hours | Actual Time: 
+Estimated Time: 12hours | Actual Time: 14hrs 
+
+- refreshed memory on how to use SASS, used mixins like utility classes for practice
+- refreshed memory on using firebase as backend
+- learned about PUT and DELETE request for fetch
+- happy with how I used grid! 
+- Want to come back and clean this project up, using redux or useContext and useReducer, seperating logic into more files and make it cleaner to navigate
+- https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value | learned how to sort array of objects by an object property
+- sorted comments by time 

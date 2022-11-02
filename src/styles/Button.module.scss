@@ -1,0 +1,11 @@
+@import "./variables.scss"; 
+.button{
+    @include button; 
+    &.gray{
+        @include button($c-gray-800, $c-gray-700)
+    }
+    &.red{
+        @include button($c-red-primary, $c-red-pale); 
+    }
+}
+

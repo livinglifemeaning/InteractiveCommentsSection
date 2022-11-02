@@ -6,6 +6,13 @@ body{
     background-color: hsl($c-blue-100); 
 }
 
+main{
+    height: 100%; 
+    padding: 2rem .5rem; 
+    width: 100%; 
+    display: grid; 
+    place-content: center; 
+}
 .icon{
     @include actions-text; 
     @include flex-row(.5em); 

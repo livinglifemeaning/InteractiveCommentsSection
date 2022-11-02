@@ -1,0 +1,41 @@
+@import "./variables";
+.newComment {
+  @include card;
+  display: grid;
+  grid-template-columns: auto 5fr auto;
+  gap: 1rem;
+  grid-column: span 2;
+
+  &.reply {
+    grid-column: 2;
+    position: relative;
+  }
+}
+
+.reply::before {
+  content: "";
+  position: absolute;
+  background-color: $c-gray-opaque;
+  width: 2px;
+  height: 100%;
+  left: -20px;
+}
+@media (max-width: $desktop-size) {
+  .newComment {
+    grid-template-areas:
+      "input input input"
+      "pic . button";
+  }
+  .profilePic {
+    grid-area: pic;
+  }
+  .inputBox {
+    grid-area: input;
+  }
+  .btnBox {
+    grid-area: button;
+  }
+}
+.profilePic {
+  width: 40px;
+}

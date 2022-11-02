@@ -1,0 +1,19 @@
+@import "./variables.scss"; 
+
+.input{
+width: 100%; 
+padding: 1rem;
+min-height: 4rem; 
+resize: none; 
+color: hsl($c-gray-800); 
+border: solid 1px $c-gray-opaque; 
+border-radius: $border-radius; 
+&::placeholder{
+    color: $c-gray-700; 
+}
+
+&:focus-visible{
+    border: solid 2px hsl($c-blue-primary);
+    outline: none; 
+}
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-
+$desktop-size: 45em; 
 $f-primary: "Rubik", sans-serif;
 $c-blue-primary: 238 40% 52%;
 $c-red-primary: 358 79% 66%;
@@ -7,18 +7,24 @@ $c-blue-pale: 239 57% 85%;
 $c-red-pale: 357 100% 86%;
 $c-gray-800: 212 24% 26%;
 $c-gray-700: 211 10% 45%;
+$c-gray-opaque: hsl(211 10% 45% / .2); 
 $c-blue-100: 223 19% 93%;
 $c-white: 0 0% 100%;
 $fw-400: 400;
 $fw-500: 500;
 $fw-700: 700;
 $border-radius: .5em; 
+$profile-width: 35px; 
+
 @mixin actions-text ($color : $c-blue-primary, $hover-color : $c-blue-pale){
     color: hsl($color); 
     font-weight: $fw-700; 
     cursor: pointer; 
     &:hover{
         color: hsl($hover-color);
+    }
+    &:active{
+        scale: .98; 
     }
 }
 
@@ -45,7 +51,7 @@ $border-radius: .5em;
     border-radius: $border-radius; 
     border: 0; 
     padding: .5em 1.5em; 
-
+    width: fit-content; 
     &:hover{
         background-color: hsl($bg-hover-color);
     }
@@ -55,7 +61,7 @@ $border-radius: .5em;
     }
 }
 
-@mixin card($max-width : 60rem){
+@mixin card($max-width : 50rem){
     background-color: hsl($c-white);
     padding: 1rem 1.5rem; 
     max-width: $max-width; 

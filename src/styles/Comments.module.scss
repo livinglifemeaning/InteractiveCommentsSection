@@ -1,0 +1,7 @@
+.comments{
+ display: grid; 
+ grid-template-columns: 20px 1fr;
+ grid-template-rows: auto;
+ row-gap: 1rem; 
+ max-width: 50rem; 
+}

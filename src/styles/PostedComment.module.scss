@@ -1,0 +1,91 @@
+@import "./variables";
+.commentBox {
+  @include card;
+  grid-column:span 2; 
+
+  &.reply{
+    grid-column: 2;  
+    position: relative; 
+  }
+}
+.reply::before{
+    content:""; 
+    position: absolute; 
+    background-color: $c-gray-opaque;   
+    width: 2px; 
+    height: 100%;  
+    left: -20px; 
+}
+.commentInfo {
+  @include flex-row;
+}
+.profilePic {
+  width: $profile-width; 
+}
+
+.commentor {
+  @include handles-text;
+}
+
+.timestamp,
+.comment {
+  @include body-text;
+}
+
+.tag {
+  @include tag-text;
+}
+.actionsBox {
+  @include flex-row(2rem);
+}
+
+.you{
+    background-color: hsl($c-blue-primary);
+    color: hsl($c-white);
+    padding-inline: .3em; 
+   border-radius: 3px; 
+}
+//  grid
+
+.commentBox {
+  display: grid;
+  row-gap: 1rem; 
+  grid-template-columns: auto 2fr auto;
+  grid-template-areas: 
+  "commentInfo commentInfo commentInfo "
+  "comment comment comment"
+  "likesBar . actionsBox"
+}
+
+@media (min-width: $desktop-size) {
+
+    .commentBox{
+        gap: 1rem; 
+        grid-template-areas:
+        "likesBar commentInfo actionsBox"
+        "likesBar comment comment"
+        
+        ;
+    }
+    .actionsBox{
+        place-self: end;
+        align-self: center;
+    }
+}
+
+.commentInfo{
+    grid-area: commentInfo;
+}
+
+.comment{
+    grid-area: comment; 
+}
+
+.actionsBox{
+    grid-area: actionsBox; 
+}
+
+.updateButton{
+ grid-column: 3; 
+ place-self: end;
+}

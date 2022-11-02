@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ReplyButton = () => {
+const ReplyButton = ({onClick}) => {
   const [color, setColor] = useState(
   "hsl(238, 40%, 52%)");
   const hoverColorHandler = () => {
@@ -11,7 +11,7 @@ const ReplyButton = () => {
   };
 
   return (
-    <div onMouseOver={hoverColorHandler} onMouseLeave={resetColorHandler} className="icon">
+    <div onMouseOver={hoverColorHandler} onMouseLeave={resetColorHandler} className="icon" onClick={onClick}>
       <span>
       <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
         <path
