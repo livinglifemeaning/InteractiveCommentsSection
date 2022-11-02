@@ -29,8 +29,7 @@ Users should be able to:
 - SASS
 - [React](https://reactjs.org/) - JS library
 - Firebase as backend database
-
-
+- used createPortal for modal 
 
 ### Notes
 Estimated Time: 12hours | Actual Time: 14hrs 
